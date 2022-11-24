@@ -61,8 +61,8 @@ function BlurImage({ image }: { image: Image }) {
           onLoadingComplete={() => setLoading(false)}
         />
       </div>
-      <h3 className="mt-4 text-sm text-gray-700">{image.title}</h3>
-      <p className="mt-1 text-lg font-medium text-gray-900">{image.desc}</p>
+      <h3 className="mt-4 text-sm text-gray-600">{image.title}</h3>
+      <p className="mt-1 text-lg font-bold text-gray-800">{image.desc}</p>
     </a>
   );
 }
