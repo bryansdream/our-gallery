@@ -23,6 +23,7 @@ type Image = {
   imageSrc: string
   title: string
   desc: string
+  time :string
 }
 
 function cn(...classes: string[]) {
@@ -67,7 +68,7 @@ function BlurImage({ image }: { image: Image }) {
           onLoadingComplete={() => setLoading(false)}
         />
       </div>
-      <h3 className="mt-4 text-sm text-gray-700">{image.title}</h3>
+      <h3 className="mt-4 text-sm text-gray-700">{image.title} |<span className="italic"> {image.time}</span></h3>
       <p className="mt-1 text-lg font-bold text-gray-800">{image.desc}</p>
     </a>
   );
