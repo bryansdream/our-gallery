@@ -8,6 +8,7 @@ const supabaseAdmin = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY || ''
 );
 
+
 export async function getStaticProps() {
   const { data } = await supabaseAdmin.from('images').select('*');
   return {
